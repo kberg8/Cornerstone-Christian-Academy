@@ -1,0 +1,640 @@
+/**************************************************************/
+/****************** CUSTOM PAGE STYLING ***********************/
+/***************** by fiveonenine design **********************/
+/**************************************************************/
+
+$darkblue: #232830;
+$medblue: #292f38;
+$blue: #323a45;
+$orange: #e74c3c;
+$white: #ffffff;
+$lightgray: #e1e1e1;
+$medgray: #a1a1a1;
+$darkgray: #666666;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.transition-color {
+	-webkit-transition: color .3s linear;
+	-moz-transition: color .3s linear;
+	-o-transition: color .3s linear;
+	transition: color .3s linear;
+}
+
+.transition-bg {
+	-webkit-transition: background .3s linear;
+	-moz-transition: background .3s linear;
+	-o-transition: background .3s linear;
+	transition: background .3s linear;
+}
+
+.appearance {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+
+/**************************************************************/
+/*******************   PLUGINS GO HERE    *********************/
+/**************************************************************
+
+Any plugins that you might be using from me, should be placed
+below this and at the top of the file.
+
+*/
+
+#active {
+	background: $orange;
+}
+
+body {
+	background: $darkblue;
+	color: $medgray;
+	font-family: "proxima-nova-condensed",sans-serif;
+	font-style: normal;
+	font-weight: 200;
+}
+
+.copyright {
+	line-height: 100px;
+}
+
+.pecca-logo {
+	margin-top: 30px;
+	float: right;
+}
+
+header a:link,
+header a:visited {
+	color: $orange;
+	text-decoration: none;
+	@extend .transition-color;
+}
+
+header a:hover,
+header a:visited {
+	color: $medgray;
+}
+
+header .container .row:first-child,
+header .container .row:nth-child(2) {
+	background: $white;
+}
+
+header .container .row:first-child {
+	border-bottom: 1px solid $lightgray;
+}
+
+header .container .row:first-child article {
+	font-size: .8em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header .container .row:first-child .col_4:nth-child(2) article {
+	text-align: center;
+}
+
+header .container .row:first-child .col_4:nth-child(3) article {
+	text-align: right;
+}
+
+header .container .row:nth-child(2) .main_logo {
+	font-size: 3em;
+	font-weight: 700;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+header .container .row:nth-child(2) .last ul {
+	float: right;
+}
+
+header .container .row:nth-child(2) .last ul li {
+	display: inline-block;
+}
+
+header .container .row:nth-child(3) {
+	background: $blue;
+}
+
+footer .container:nth-child(1) {
+	background: $blue;
+}
+
+footer .container:nth-child(1) .row article {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(1) ul {
+	margin-top: 20px;
+}
+
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(1) ul li {
+	display: inline-block;
+}
+
+
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(2) ul li,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(3) ul li {
+	border-bottom: 1px solid $darkgray;
+}
+
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(2) ul li:last-child,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(3) ul li:last-child {
+	border-bottom: none;
+}
+
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(2) ul li a:link,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(2) ul li a:visited,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(3) ul li a:link,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(3) ul li a:visited {
+	display: block;
+	text-decoration: none;
+	color: $medgray;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	@extend .transition-color;
+}
+
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(2) ul li a:hover,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(2) ul li a:active,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(3) ul li a:hover,
+footer .container:nth-child(1) .row:nth-child(1) .col_4:nth-child(3) ul li a:active {
+	color: $lightgray;
+}
+
+footer .container:nth-child(2) {
+	background: $medblue;
+}
+
+footer .container:nth-child(2) .row article {
+	min-height: 100px;
+}
+
+footer .container h3 {
+	color: $white;
+	font-size: 1.4em;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+footer .container .row .footer_social a:link,
+footer .container .row .footer_social a:visited {
+	background: $blue;
+	color: $medgray;
+	font-size: 1.5em;
+	@include border-radius(20px);
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-decoration: none;
+	line-height: 45px;
+	text-align: center;
+	@extend .transition-bg;
+}
+
+footer .container .row .footer_social a:hover,
+footer .container .row .footer_social a:active {
+	background: $medgray;
+	color: $blue;
+}
+
+.gray-link {
+	background: $lightgray;
+	display: inline-block;
+	margin-top: 25px;
+	width: 50px;
+	height: 50px;
+	@include border-radius(25px);
+	text-align: center;
+	line-height: 50px
+}
+
+.main .container {
+	background: $white;
+}
+
+.main img {
+	width: 100%;
+}
+
+.main p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.main .container .row:nth-child(2) article {
+	position: relative;
+}
+
+.main .container .row:nth-child(2) article span.banner_1 {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	color: $orange;
+	font-size: 2.9em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.main .container .row:nth-child(2) article span.banner_2 {
+	position: absolute;
+	top: 63px;
+	left: 30px;
+	color: $white;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.main .container .row:nth-child(2) article span.banner_3 {
+	position: absolute;
+	top: 86px;
+	left: 30px;
+	color: $white;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.main .container .row:nth-child(2) article a:link,
+.main .container .row:nth-child(2) article a:visited {
+	background: $orange;
+	color: $white;
+	position: absolute;
+	display: block;
+	bottom: 20px;
+	left: 30px;
+	text-decoration: none;
+	padding: 15px;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 700;
+	@include border-radius(5px);
+	@extend .transition-bg;
+}
+
+.main .container .row:nth-child(2) article a:hover,
+.main .container .row:nth-child(2) article a:active {
+	background: $white;
+	color: $orange;
+}
+
+
+.main .container .row:nth-child(4) .brand_logo {
+	display: block;
+	background: $lightgray;
+	height: 100px;
+	width: 100px;
+	@include border-radius(50px);
+	line-height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	@extend .transition-bg;
+}
+
+.main .container .row:nth-child(4) .brand_logo:hover {
+	color: $white;
+	background: $orange;
+}
+
+.main .container .row:nth-child(3) ul li {
+	display: inline-block;
+	width: 16.4%;
+}
+
+.main .container h2 {
+	color: $darkgray;
+	font-size: 1.8em;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.mobile_nav {
+	display: none;
+}
+
+.mobile_nav select {
+	color: $white;
+	@extend .appearance;
+	@include border-radius(0px);
+	border: none;
+	height: 30px;
+	padding-left: 20px;
+	background: $orange;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 16.4%;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+	color: $white;
+	display: block;
+	text-align: center;
+	height: 60px;
+	width: 100%;
+	line-height: 60px;
+	text-transform: uppercase;
+	@extend .transition-bg;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+	background: $orange;
+}
+
+.orange {
+	color: $orange;
+}
+
+.slideshow .container {
+	background: $white;
+}
+
+.sy-pager li.sy-active a {
+  background-color: $orange;
+}
+
+
+
+
+
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/******************* GENERAL PAGE STYLING *********************/
+/**************************************************************
+
+General page styling goes here. 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+/**************************************************************/
+/***************** ADDITIONAL PAGE STYLING ********************/
+/**************************************************************
+
+Additional page styling goes here.
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+
+/**************************************************************/
+/******************* MEDIAQUERY RESPONSIVE ********************/
+/**************************************************************
+
+Custom Attributes if required for each device layout.
+
+*/
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+	nav ul li {
+		width: 16.3%;
+	}
+
+	.main .container .row:nth-child(3) ul li {
+		width: 16.3%;
+	}
+
+	.main .container .row:nth-child(2) article span.banner_1 {
+		top: 10px;
+		left: 20px;
+		font-size: 2em;
+	}
+
+	.main .container .row:nth-child(2) article span.banner_2 {
+		top: 40px;
+		left: 20px;
+		font-size: 1.5em;
+	}
+
+	.main .container .row:nth-child(2) article span.banner_3 {
+		top: 65px;
+		left: 20px;
+		font-size: 1.5em;
+
+	}
+
+	.main .container .row:nth-child(2) article a:link,
+	.main .container .row:nth-child(2) article a:visited {
+		left: 20px;
+		bottom: 15px;
+		padding: 7px;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+
+	.mobile_nav {
+		display: block;
+	}
+
+	.main_logo {
+		text-align: center;
+	}
+
+	nav {
+		display: none;
+	}
+
+	header .container .row:nth-child(2) .last ul {
+		float: none;
+		margin: 0 auto;
+		display: block;
+		width: 215px;
+	}
+
+	header .container .row:nth-child(2) .last ul a:link,
+	header .container .row:nth-child(2) .last ul a:visited {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	header .container .row:first-child .col_4:nth-child(1) article,
+	header .container .row:first-child .col_4:nth-child(2) article,
+	header .container .row:first-child .col_4:nth-child(3) article {
+		text-align: center;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+}
+@media (min-width: 0px) and (max-width: 479px) {
+
+	.mobile_nav {
+		display: block;
+	}
+
+	.main_logo {
+		text-align: center;
+	}
+
+	nav {
+		display: none;
+	}
+
+	header .container .row:nth-child(2) .last ul {
+		float: none;
+		margin: 0 auto;
+		display: block;
+		width: 215px;
+	}
+
+	header .container .row:nth-child(2) .last ul a:link,
+	header .container .row:nth-child(2) .last ul a:visited {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	header .container .row:first-child .col_4:nth-child(1) article,
+	header .container .row:first-child .col_4:nth-child(2) article,
+	header .container .row:first-child .col_4:nth-child(3) article {
+		text-align: center;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.main .container .row:nth-child(2) article span.banner_1 {
+		top: 10px;
+		left: 20px;
+		font-size: 2em;
+	}
+
+	.main .container .row:nth-child(2) article span.banner_2 {
+		top: 40px;
+		left: 20px;
+		font-size: 1.5em;
+	}
+
+	.main .container .row:nth-child(2) article span.banner_3 {
+		top: 65px;
+		left: 20px;
+		font-size: 1.5em;
+
+	}
+
+	.main .container .row:nth-child(2) article a:link,
+	.main .container .row:nth-child(2) article a:visited {
+		left: 20px;
+		bottom: 15px;
+		padding: 7px;
+	}
+}
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+
+
+@font-face {
+	font-family: 'pecaa-template-1';
+	src:url('../fonts/pecaa-template-1.eot?dwg78z');
+	src:url('../fonts/pecaa-template-1.eot?#iefixdwg78z') format('embedded-opentype'),
+		url('../fonts/pecaa-template-1.woff?dwg78z') format('woff'),
+		url('../fonts/pecaa-template-1.ttf?dwg78z') format('truetype'),
+		url('../fonts/pecaa-template-1.svg?dwg78z#pecaa-template-1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'pecaa-template-1';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-linkedin:before {
+	content: "\e602";
+}
+.icon-instagram:before {
+	content: "\e603";
+}
