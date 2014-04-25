@@ -244,17 +244,20 @@ footer .container .row .footer_social a:active {
   border-radius: 50px;
   line-height: 100px;
   text-align: center;
+  text-decoration: none;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px; }
 
 .main .container .row:nth-child(4) .brand_logo:hover {
   color: white;
-  background: #EC8C3E; }
+  background: #EC8C3E;
+  text-decoration: none; }
 
 .main .container .row:nth-child(3) ul li {
   display: inline-block;
-  width: 16.4%; }
+  width: 16.4%; 
+  text-decoration: none;}
 
 .main .container h2 {
   color: #666666;
@@ -283,7 +286,7 @@ footer .container .row .footer_social a:active {
 
 nav ul li {
   display: inline-block;
-  width: 16.4%; }
+  width: 16.3%; }
 
 nav ul li a:link,
 nav ul li a:visited {
