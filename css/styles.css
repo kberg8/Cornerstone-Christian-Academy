@@ -453,3 +453,9 @@ nav ul li a:active {
 
 .icon-instagram:before {
   content: "\e603"; }
+
+  /*====================== */
+  #gmap {
+  height: 450px;
+  width: 600px;
+}
