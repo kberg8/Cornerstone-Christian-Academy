@@ -21,9 +21,9 @@ function initialize() {
 	var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Professional Eye Care Associates of America (PECAA)</h1>'+
+      '<h1 id="firstHeading" class="firstHeading">Cornerstone Christian Academy</h1>'+
       '<div id="bodyContent">'+
-      '<p><b>Address</b><br /> address<br />address ' +
+      '<p><b>4224 E 4th Ave</b><br /> Spokane, WA 99202<br /> ' +
       '</div>'+
       '</div>';
 
