@@ -398,6 +398,11 @@ font-size: .75em;
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px; } }
+
+footer .copyright {
+  font-size: .5em;
+}
+
 @media (min-width: 0px) and (max-width: 479px) {
   .mobile_nav {
     display: block; }
