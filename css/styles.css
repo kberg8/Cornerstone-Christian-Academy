@@ -322,6 +322,14 @@ nav ul li a:active {
 .sy-pager li.sy-active a {
   background-color: #EC8C3E; }
 
+  footer img {
+    width: 100%;
+  }
+
+  footer .copyright {
+    font-size: .75em;
+  }
+
 /* =========================== GENERAL PAGE STYLES ================================= */
 
 /* =========================== ADDITIONAL PAGE STYLES ============================== */
@@ -334,7 +342,7 @@ nav ul li a:active {
 
 
 nav ul li a:link, nav ul li a:visited {
-font-size: .50em;
+font-size: .75em;
 
 }
 
