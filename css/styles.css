@@ -174,8 +174,8 @@ footer .container .row .footer_social a:active {
 
 .main p {
   font-size: 1.2em;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 20px; }
 
 .main .container .row:nth-child(2) article {
@@ -265,13 +265,17 @@ footer .container .row .footer_social a:active {
 .main .container .row:nth-child(3) ul li {
   display: inline-block;
   width: 16.4%; 
-  text-decoration: none;}
+  text-decoration: none; }
+
+.main .container ul {
+  margin-left: 40px;
+}
 
 .main .container h2 {
   color: #666666;
   font-size: 1.8em;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
   margin-top: 20px;
   text-transform: uppercase; }
 
