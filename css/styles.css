@@ -327,16 +327,13 @@ nav ul li a:active {
   background-color: #EC8C3E; }
 
   footer img {
-    width: 100%;
+    width: 30%;
+    float: right;
   }
 
   footer .copyright {
     font-size: .75em;
   }
-
-/* =========================== GENERAL PAGE STYLES ================================= */
-
-/* =========================== ADDITIONAL PAGE STYLES ============================== */
 
 
 /* =========================== MEDIA QUERIES FOR MOBILE/TABLET ===================== */
